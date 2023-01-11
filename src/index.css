@@ -1,0 +1,40 @@
+body {
+    font-family: "Poppins", sans-serif !important;
+    margin: 0;
+}
+
+.input-calendar .input-calendar-field,
+.PhoneInputInput {
+    height: 34px !important;
+    border-radius: 0px !important;
+    width: 204px !important;
+}
+
+.user_body {
+    min-height: 76vh;
+}
+
+.admin_body {
+    min-height: 80vh;
+    margin-left: 260px;
+    background-color: #f7faff;
+    transition: margin-left .6s ease-out;
+    padding: 1.5rem;
+}
+
+footer {
+    margin-left: 260px;
+    background-color: #f7faff;
+    transition: margin-left .6s ease-out;
+}
+
+.loader {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cQSdBO div:first-child {
+    white-space: normal !important;
+}

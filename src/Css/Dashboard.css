@@ -1,0 +1,265 @@
+.main_content_heading {
+    font-family: 'Open Sans', arial;
+    font-weight: bold;
+    font-size: 14pt;
+    font-weight: normal;
+    color: #333;
+}
+
+.main_column_container {
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5pt;
+}
+
+.main_column_container_slider {
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5pt;
+}
+
+.whyus_text {
+    padding: 1%;
+    border-radius: 5pt;
+    font-family: 'Open Sans', arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color: #333;
+    border-right-color: #333;
+    border-bottom-color: #333;
+    border-left-color: #333;
+}
+
+.whyus_heading {
+    padding: 1%;
+    border-radius: 5pt;
+    font-family: 'Open Sans', arial;
+    font-size: 90%;
+    color: #333;
+    font-weight: bold;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-color: #333;
+    border-right-color: #333;
+    border-bottom-color: #333;
+    border-left-color: #333;
+}
+
+.main_content_details {
+    font-family: 'Open Sans', arial;
+    font-size: 12pt;
+    text-align: justify;
+    color: #003;
+    border: thin ridge #666;
+    border-radius: 5px;
+    padding: 3pt;
+}
+
+.offers_text {
+    font-family: 'Open Sans', arial;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    padding: 0%;
+    text-align: left;
+}
+
+.offers_text_price {
+    font-family: 'Open Sans', arial;
+    font-size: 14px;
+    color: #DB6D0B;
+    font-weight: bold;
+    padding: 0%;
+    text-align: left;
+}
+
+.offers_price {
+    font-family: 'Open Sans', arial;
+    font-size: 12px;
+    color: #11589F;
+    font-weight: bold;
+    padding: 0%;
+    text-align: left;
+}
+
+a.northsouth:link {
+    color: #FFF;
+    text-decoration: none;
+    border: none
+}
+
+a.offers_text_price:link {
+    text-decoration: none;
+}
+
+a.northsouth:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a.offers_text_price:active {
+    font-family: 'Open Sans', arial;
+    font-size: 12px;
+    color: #DB6D0B;
+    font-weight: bold;
+    padding: 0%;
+    text-align: left;
+}
+
+a.northsouth:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a.offers_text_price:visited {
+    font-family: 'Open Sans', arial;
+    font-size: 12px;
+    color: #DB6D0B;
+    font-weight: bold;
+    padding: 0%;
+    text-align: left;
+}
+
+a.northsouth:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.northsouth {
+    font-family: 'Lato', arial;
+    font-size: 90%;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 2%;
+    text-align: center;
+    background-color: #DB6D0B;
+    margin: 0%;
+    border-radius: 3pt;
+}
+
+.testimonial_heading {
+    font-family: 'Open Sans', arial;
+    font-size: 90%;
+    color: #333;
+    font-weight: bold;
+    padding: 2%;
+    vertical-align: text-top;
+}
+
+.testimonial_heading_text {
+    font-family: 'Open Sans', arial;
+    font-size: 80%;
+    color: #333;
+    font-weight: normal;
+    padding: 2%;
+    vertical-align: text-top;
+}
+
+.destination_area {
+    background: #666666;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination_area h4 {
+    color: #ffff;
+    font-size: 13px;
+    text-transform: capitalize;
+    margin: 0;
+    cursor: pointer;
+}
+
+.destination_area h2 {
+    color: #ffff;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.table_grid {
+    margin-top: 10px;
+    display: grid;
+    grid-row-gap: 6px;
+}
+
+.destime_table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 15px 24px;
+    text-align: center;
+}
+
+.des_content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.des_content h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ccc;
+    margin: 0;
+}
+
+.des_title h3,
+.des_price span {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.des_price span {
+    text-transform: capitalize;
+}
+
+.des_title h2,
+.des_price h4 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.des_time h4 {
+    margin: 0;
+    font-size: 13px;
+    color: red;
+}
+
+.des_time span {
+    margin: 0;
+    font-size: 13px;
+    color: red;
+}
+
+.des_bookbtn button {
+    background: #ee8722;
+    border: none;
+    padding: 15px 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.des_bookbtn p {
+    margin: 0;
+    font-size: 16px;
+    color: #103f5b;
+    font-weight: 500;
+    margin-top: 5px;
+}

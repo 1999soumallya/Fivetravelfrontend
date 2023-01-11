@@ -1,0 +1,42 @@
+.select_box {
+    background-color: #103f5b;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.select_from label {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.search_btn {
+    background: #fff;
+    width: 100%;
+    padding: 0px 20px;
+    text-align: center;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #103f5b;
+    cursor: pointer;
+}
+
+#DeptureDate .input-calendar{
+    display: flex;
+}
+
+#DeptureDate .input-calendar .input-calendar-field, .PhoneInputInput{
+    width: 100% !important;
+    border-radius: 4px !important;
+    height: 37px !important;
+    border: 1px solid rgb(223, 227, 231) !important;
+}
