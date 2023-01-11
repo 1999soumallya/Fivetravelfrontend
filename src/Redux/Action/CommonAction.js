@@ -4,7 +4,7 @@ import axios from 'axios'
 export const UserRegisterAction = (deta) => async (dispatch) => {
     try {
         dispatch({ type: USER_REGISTER_REQUEST })
-        const { data } = await axios.post('/auth/', deta)
+        const { data } = await axios.post('http://15.206.239.100:4000/api/auth/', deta)
         dispatch({ type: USER_REGISTER_SUCCESS, payload: data })
         localStorage.setItem('userInfo', JSON.stringify(data))
     } catch (error) {
@@ -15,7 +15,7 @@ export const UserRegisterAction = (deta) => async (dispatch) => {
 export const UserLoginAction = (deta) => async (dispatch) => {
     try {
         dispatch({ type: USER_LOGIN_REQUEST })
-        const { data } = await axios.post('/auth/signin', deta)
+        const { data } = await axios.post('http://15.206.239.100:4000/api/auth/signin', deta)
         dispatch({ type: USER_LOGIN_SUCCESS, payload: data })
         localStorage.setItem('userInfo', JSON.stringify(data))
     } catch (error) {
@@ -33,7 +33,7 @@ export const UserValidation = () => async (dispatch, getState) => {
         dispatch({ type: VALIDATE_USER_REQUEST })
         const { userLogin: { userInfo } } = getState()
         const config = { headers: { "Content-Type": "application/json", "Authorization": `Bearer ${userInfo.token}` } }
-        const { data } = await axios.get("/auth/validator", config)
+        const { data } = await axios.get("http://15.206.239.100:4000/api/auth/validator", config)
         dispatch({ type: VALIDATE_USER_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: VALIDATE_USER_FAILS, payload: error.response && error.response.data });

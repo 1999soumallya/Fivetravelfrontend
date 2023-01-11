@@ -6,7 +6,7 @@ export const GetAllFlightDetailsAction = () => async (dispatch, getState) => {
         dispatch({ type: GET_ALL_FLIGHT_DETAILS_REQUEST })
         const { userLogin: { userInfo } } = getState()
         const config = { headers: { "Content-Type": "application/json", "Authorization": `Bearer ${userInfo.token}` } }
-        const { data } = await axios.get("/admin", config)
+        const { data } = await axios.get("http://15.206.239.100:4000/api/admin", config)
         dispatch({ type: GET_ALL_FLIGHT_DETAILS_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: GET_ALL_FLIGHT_DETAILS_FAILS, payload: error.response && error.response.data })
@@ -18,7 +18,7 @@ export const FileUploadAction = (data) => async (dispatch, getState) => {
         dispatch({ type: FILE_UPLOAD_REQUEST })
         const { userLogin: { userInfo } } = getState()
         const config = { headers: { "Content-Type": "multipart/form-data", "Authorization": `Bearer ${userInfo.token}` } }
-        const { deta } = await axios.post("/fileupload/", data, config)
+        const { deta } = await axios.post("http://15.206.239.100:4000/api/fileupload/", data, config)
         dispatch({ type: FILE_UPLOAD_SUCCESS, payload: deta });
         dispatch(GetAllFlightDetailsAction())
     } catch (error) {
@@ -31,7 +31,7 @@ export const AirlinsFileUploadAction = (Airlinsdata) => async (dispatch, getStat
         dispatch({ type: AIRLINES_UPLOAD_REQUEST })
         const { userLogin: { userInfo } } = getState()
         const config = { headers: { "Content-Type": "multipart/form-data", "Authorization": `Bearer ${userInfo.token}` } }
-        const { data } = await axios.post("/fileupload/airportfileupload", Airlinsdata, config)
+        const { data } = await axios.post("http://15.206.239.100:4000/api/fileupload/airportfileupload", Airlinsdata, config)
         dispatch({ type: AIRLINES_UPLOAD_SUCCESS, payload: data })
     } catch (error) {
         dispatch({ type: AIRLINES_UPLOAD_FAILS, payload: error.response && error.response.data })
@@ -43,7 +43,7 @@ export const AdminGetAllAirportDetailsAction = () => async (dispatch, getState) 
         dispatch({ type: GET_ALL_AIRPORT_DETAILS_REQUEST })
         const { userLogin: { userInfo } } = getState()
         const config = { headers: { "Content-Type": "multipart/form-data", "Authorization": `Bearer ${userInfo.token}` } }
-        const { data } = await axios.get('/admin/airportdetails', config)
+        const { data } = await axios.get('http://15.206.239.100:4000/api/admin/airportdetails', config)
         dispatch({ type: GET_ALL_AIRPORT_DETAILS_SUCCESS, payload: data })
 
     } catch (error) {
@@ -56,7 +56,7 @@ export const AdminGetPreFlightBookingAction = () => async (dispatch, getState) =
         dispatch({ type: ADMIN_PRE_FLIGHT_BOOKING_REQUEST })
         const { userLogin: { userInfo } } = getState()
         const config = { headers: { "Content-Type": "multipart/form-data", "Authorization": `Bearer ${userInfo.token}` } }
-        const { data } = await axios.get('/admin/preflightbooking', config)
+        const { data } = await axios.get('http://15.206.239.100:4000/api/admin/preflightbooking', config)
         dispatch({ type: ADMIN_PRE_FLIGHT_BOOKING_SUCCESS, payload: data })
     } catch (error) {
         dispatch({ type: ADMIN_PRE_FLIGHT_BOOKING_REQUEST, payload: error.response && error.response.data })
